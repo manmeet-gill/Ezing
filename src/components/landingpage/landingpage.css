@@ -1,0 +1,27 @@
+.impexp{
+
+    padding: 25px;
+
+}
+.study{
+    padding: 25px;
+}
+
+#outerdiv{
+
+    text-align: center;
+
+}
+
+@keyframes hello {
+    0% {
+        transform: translateX(0);
+    }
+50% {
+    transform: translateX(2em);
+}
+100% {
+    transform: translateX(0);
+}
+    
+}

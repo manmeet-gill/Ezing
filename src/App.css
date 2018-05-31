@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  background-image:
+          url("images/stars.jpg");
+            height: 50em;
+            background-size: cover;
+
+  background-repeat: none;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 80px;
+
+}
+
+.App-header {
+  background-color: cornsilk;
+  height: 150px;
+  padding: 3px;
+  color: black;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+
+  from { transform: rotate3d(1,1,1,0deg); }
+  to { transform: rotate3d(1,1,1,360deg); }
+}
+
