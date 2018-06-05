@@ -3,7 +3,7 @@ import logo from './ezing_logo.svg';
 import './App.css';
 import 'semantic-ui-css/semantic.css';
 import LandingPage from './components/landingpage/landingpage';
-
+import HomePage from './components/homepage/homepage'
 class App extends Component {
   render() {
     return (
@@ -15,7 +15,8 @@ class App extends Component {
         {/*<p className="App-intro">*/}
           {/*We the best*/}
         {/*</p>*/}
-          <LandingPage/>
+          {/*<LandingPage/>*/}
+        <HomePage/>
       </div>
     );
   }

@@ -1,11 +1,10 @@
 .App {
   text-align: center;
-  background-image:
-          url("images/stars.jpg");
-            height: 50em;
-            background-size: cover;
+  /*background-image:*/
+          /*url("images/stars.jpg");*/
+            /*background-size: cover;*/
 
-  background-repeat: none;
+  /*background-repeat: none;*/
 }
 
 .App-logo {

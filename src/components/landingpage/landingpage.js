@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Message, Button, Image,Card} from 'semantic-ui-react';
 import './landingpage.css';
-import Menu from './menu.js'
+import Menu from './menu.js';
 import impexp from './impexp.jpg';
 import study from '../../images/studyabroad.jpg'
 
