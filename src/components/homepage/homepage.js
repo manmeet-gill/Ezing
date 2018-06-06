@@ -1,32 +1,22 @@
 import React, {Component} from 'react';
 import Menu from '../landingpage/menu'
 import {List, Card, Grid, Button,Icon, Container,Image,Header, Segment } from 'semantic-ui-react'
-import Slider1 from '../../images/ezing_roller_1.PNG'
-import Slider2 from '../../images/ezing_roller_2.PNG'
 import CII from '../../images/CII.jpg'
 import UNI from '../../images/UNI.jpg'
 import Visa from '../../images/visa.png'
 import Bottom from '../landingpage/bottom'
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import Carousel from './carousel';
+import Quote from './quote'
+import Davinder from '../../images/davinderjit.png'
+import Balkar from '../../images/balkar.png'
+import Gurdeep from '../../images/gurdeep.png'
 class homepage extends Component{
 
     render(){
         return(
             <div>
                 <Menu/>
-                <CarouselProvider
-                    naturalSlideWidth={100}
-                    naturalSlideHeight={30}
-                    totalSlides={2}
-                >
-                    <Slider>
-                        <Slide index={0}><Image src={Slider1} fluid /></Slide>
-                        <Slide index={1}><Image src={Slider2} fluid /></Slide>
-                    </Slider>
-                    <ButtonBack>Back</ButtonBack>
-                    <ButtonNext>Next</ButtonNext>
-                </CarouselProvider>
+                <Carousel/>
 
                 <Container fluid>
                 <Segment textAlign='center'  >
@@ -42,7 +32,7 @@ class homepage extends Component{
                         </Button.Content>
                     </Button>
 
-                        <Grid columns={3}>
+                        <Grid columns={3} stackable>
                             <Grid.Column >
                                 <Header as='h4' textAlign='left'>
                                     CERTIFIED  FROM UNI AGENT
@@ -64,13 +54,12 @@ class homepage extends Component{
                 <Container fluid={true}>
                     <Segment textAlign='center' >
                         <Header as='h2' textAlign='center'>
-                            OUR EXCLUSIVE SERVICES
-                        </Header>
+                            OUR EXCLUSIVE SERVICES                     </Header>
                         <text>WHAT MAKES US STAND OUT FROM CROWD
                         </text>
                     </Segment>
-                    <Grid centered columns={2}>
-                        <Grid.Column>
+                    <Grid centered columns={2} stackable>
+                        <Grid.Column >
                             <Card
                                 image={CII}
                                 header='CONFEDERATION OF INDIAN INDUSTRY'
@@ -141,7 +130,12 @@ class homepage extends Component{
                     </Header>
                     <Container>
                         <Segment textAlign='center'>
+                           <Grid columns={3} divided stackable>
+                               <Grid.Column><Quote name={"Davinderjit Singh"} info={"Amritsar to Hospitality Australia"}  imgpath={Davinder} /></Grid.Column>
+                               <Grid.Column><Quote name={"Balkar Singh"} info={"Jammu to Comm. Cookry Australia"}  imgpath={Balkar}/></Grid.Column>
+                               <Grid.Column><Quote name={"Gurdeep Singh"} info={"Jammu to Bussines New Zealand"} imgpath={Gurdeep}/></Grid.Column>
 
+                           </Grid>
                         </Segment>
                     </Container>
                 </Container>

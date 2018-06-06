@@ -4,6 +4,9 @@ import './App.css';
 import 'semantic-ui-css/semantic.css';
 import LandingPage from './components/landingpage/landingpage';
 import HomePage from './components/homepage/homepage'
+import Services from './components/services/services'
+import Contact from './components/contact'
+import About from './components/about'
 class App extends Component {
   render() {
     return (
@@ -16,7 +19,10 @@ class App extends Component {
           {/*We the best*/}
         {/*</p>*/}
           {/*<LandingPage/>*/}
-        <HomePage/>
+        {/*<HomePage/>*/}
+        {/*<Services/>*/}
+        {/*<About/>*/}
+        <Contact/>
       </div>
     );
   }

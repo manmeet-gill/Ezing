@@ -8,7 +8,7 @@ export default class Menubar extends Component {
         return (
             <Container fluid >
                 <Segment inverted>
-                    <Grid centered={true} columns={3}>
+                    <Grid centered={true} columns={3} stackable>
                         <Grid.Column>
                             <Header as='h4' inverted>
                                 EZING Overseas
