@@ -10,12 +10,17 @@ export default class Menubar extends Component {
         const { activeItem } = this.state
 
         return (
+            <div>
             <Menu>
                 <Menu.Item header>Ezing</Menu.Item>
                 <Menu.Item name='services' active={activeItem === 'services'} onClick={this.handleItemClick} />
                 <Menu.Item name='aboutUs' active={activeItem === 'aboutUs'} onClick={this.handleItemClick} />
                 <Menu.Item name='contact us' active={activeItem === 'contact us'} onClick={this.handleItemClick} />
             </Menu>
+                <div >
+                    {this.props.children}
+                </div>
+            </div>
         )
     }
 }
